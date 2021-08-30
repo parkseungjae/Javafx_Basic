@@ -13,7 +13,7 @@ public class MainClass01 extends Application{
 
 		Label lb = new Label("Hello World!!");
 		lb.setFont( new Font(20) );
-
+		//기초 화면 
 		Scene scene = new Scene(lb,200,100);
 		
 		arg0.setScene(scene);
