@@ -24,7 +24,7 @@ public class Ex02 extends Application{
 		
 		gp.getChildren().addAll(btn,lb);
 		Button btn2	 = new Button("1,0");
-		//getchildren을 쓰지않고 add를 할경우 생성과동시에 배치를 진행할수 있다.
+		//getChildren을 쓰지않고 add를 할경우 생성과동시에 배치를 진행할수 있다.
 		gp.add(btn2,1,0);
 		gp.add(new Label("0,1"),0,1);
 		gp.setPadding(new Insets(20));//모든 방위 20;
@@ -35,8 +35,9 @@ public class Ex02 extends Application{
 		
 		FlowPane fp = new FlowPane();
 		fp.getChildren().add(new Button("merge col(0), row(2)"));
-		fp.setStyle("-fx-background-color-black;");
+		fp.setStyle("-fx-background-color:black;");
 		fp.setAlignment(Pos.CENTER);
+		gp.add(fp, 0,2,2,1);//가로, 세로, 가로병합, 세로병합
 		
 		arg0.show();	
 	}
