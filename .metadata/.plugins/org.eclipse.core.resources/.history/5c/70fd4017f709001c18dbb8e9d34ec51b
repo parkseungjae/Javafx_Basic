@@ -2,7 +2,6 @@ package flowpane;
 
 
 import javafx.application.Application;
-import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -21,8 +20,6 @@ public class Ex01 extends Application{
 			buttons[i] = new Button("btn0"+(i+1));
 			flowPane.getChildren().add(buttons[i]);
 		}
-		
-		flowPane.setPadding(new Insets(10,10,10,10));
 		
 		flowPane.setVgap(80);//가로
 		flowPane.setHgap(10);//세로
