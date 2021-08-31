@@ -14,10 +14,8 @@ public class Ex01 extends Application{
 		ListView<String> lv = new ListView<String>();
 		lv.getItems().addAll("item1","item2","item3");
 		lv.setPrefSize(100,100);
-		lv.setLayoutX(20);
-		lv.setLayoutY(20);
-		
 		ap.getChildren().add(lv);
+		
 		arg0.setScene(new Scene(ap,300,200));
 		arg0.show();
 		
