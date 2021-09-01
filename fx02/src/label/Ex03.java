@@ -9,7 +9,7 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class Ex03 extends Application{
-
+	
 	@Override
 	public void start(Stage arg0) throws Exception {
 		HBox hbox = new HBox();
@@ -21,6 +21,7 @@ public class Ex03 extends Application{
 
 		lbl.setWrapText(true);
 		lbl.setFont(new Font(20));//폰트크기
+		
 		lbl.setRotate(45);
 		lbl.setTranslateY(100);//Y축을 수만큼 내려줌
 
