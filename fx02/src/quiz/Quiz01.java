@@ -103,6 +103,7 @@ public class Quiz01 extends Application{
 		bp.setCenter(cFp);
 		bp.setRight(loginGp);
 	
+		arg0.setResizable(false);
 		arg0.setTitle("Quiz3");
 		arg0.setScene(new Scene(bp,600,300));
 		arg0.show();
