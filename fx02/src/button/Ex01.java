@@ -2,6 +2,8 @@ package button;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -30,6 +32,14 @@ public class Ex01 extends Application{
 		btn2.setOnMouseReleased(e->{
 			btn2.setStyle("-fx-background-color:transparent;-fx-padding: 10 10 10 10;");//gransparent 배경색과 바탕색을 맞춰라
 
+		});
+		
+		btn.setOnAction(e->{
+			Alert at = new Alert(AlertType.ERROR);
+			at.setTitle("ERROR");
+			at.setHeaderText("BUTTON EVENT");
+			at.setContentText("Button has clicked");
+			at.show();
 		});
 
 		canvas.getChildren().addAll(btn,btn2);
