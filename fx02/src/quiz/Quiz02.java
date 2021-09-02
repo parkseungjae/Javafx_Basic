@@ -43,7 +43,7 @@ public class Quiz02 extends Application{
 			valLb.setRotate(270);
 		});
 
-		Label senLb = new Label("A labe l that needs to be wrapped");
+		Label senLb = new Label("A label that needs to be wrapped");
 		senLb.setWrapText(true);
 		senLb.setOnMouseEntered(e->{
 			senLb.setRotate(90);
