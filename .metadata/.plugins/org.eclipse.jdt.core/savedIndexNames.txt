@@ -1,12 +1,5 @@
 INDEX VERSION 1.131+C:\park's java\javafx-workspace\.metadata\.plugins\org.eclipse.jdt.core
 1761551251.index
 4059460137.index
-4104570565.index
-1104729339.index
-2507701945.index
-1014396372.index
-715922638.index
-3988543331.index
-2760187564.index
-2147220718.index
-2944172318.index
+1885644194.index
+1749042026.index
