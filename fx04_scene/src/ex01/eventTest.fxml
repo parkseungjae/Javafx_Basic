@@ -13,8 +13,8 @@
       <Text layoutX="26.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
       <TextField fx:id="fxId" layoutX="98.0" layoutY="21.0" />
       <PasswordField fx:id="fxPwd" layoutX="98.0" layoutY="51.0" />
-      <Button layoutX="27.0" layoutY="88.0" mnemonicParsing="false" onAction="#LoginProc" text="Login" />
-      <Button layoutX="199.0" layoutY="88.0" mnemonicParsing="false" text="Join in" />
-      <Button layoutX="111.0" layoutY="88.0" mnemonicParsing="false" text="Cancel" />
+      <Button fx:id="lgBtn" layoutX="27.0" layoutY="88.0" mnemonicParsing="false" onAction="#LoginProc" text="Login" />
+      <Button fx:id="jiBtn" layoutX="199.0" layoutY="88.0" mnemonicParsing="false" onAction="#OpenMembershipForm" text="Join in" />
+      <Button fx:id="ccBtn" layoutX="111.0" layoutY="88.0" mnemonicParsing="false" onAction="#CancelProc" text="Cancel" />
    </children>
 </AnchorPane>
