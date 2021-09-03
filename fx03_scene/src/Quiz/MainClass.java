@@ -14,6 +14,7 @@ public class MainClass extends Application {
 	public void start(Stage primaryStage) throws IOException{
 		Parent root = FXMLLoader.load(getClass().getResource("eventTest.fxml"));
 		Scene scene = new Scene(root);
+		primaryStage.setTitle("Quiz");
 		primaryStage.setScene(scene);
 		primaryStage.show();
 		
