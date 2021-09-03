@@ -17,7 +17,7 @@ public class Controller implements Initializable{
 	@FXML private PasswordField pwField;
 	@FXML private Button loginbtn;
 
-	
+
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		Alert alt = new Alert(AlertType.INFORMATION);
@@ -32,16 +32,25 @@ public class Controller implements Initializable{
 				alt.show();				
 			}else {
 				MyDB db = new MyDB();
-				if(db.getTable().containsKey(idField.getText()) && db.getTable().containsValue(pwField.getText())) {
-					alt.setContentText("로그인 성공");
-					alt.show();									
+				if(db.getTable().containsKey(idField.getText())) {
+					String password = db.getPassword(idField.getText());
+					if(pwField.getText().equals(password)) {
+
+						alt.setContentText("로그인 성공");
+						alt.show();									
+					}else {
+						alt.setContentText("로그인 실패");
+						alt.show();				
+
+					}
+
 				}else {
 					alt.setContentText("로그인 실패");
 					alt.show();				
 
 				}
 			}
-			
+
 		});	
 	}
 }
