@@ -22,6 +22,6 @@ public class MyDB {
 	}
 	public String getPassword(String key) {
 		return table.get(key);
-		
+
 	}
 }
