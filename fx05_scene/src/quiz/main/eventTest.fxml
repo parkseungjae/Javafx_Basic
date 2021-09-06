@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="141.0" prefWidth="294.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz.main.MainController">
+   <children>
+      <Label layoutX="37.0" layoutY="14.0" text="ID" />
+      <Label layoutX="19.0" layoutY="43.0" text="Password" />
+      <TextField fx:id="fxid" layoutX="86.0" layoutY="10.0" />
+      <PasswordField fx:id="fxPwd" layoutX="86.0" layoutY="39.0" />
+      <Button layoutX="40.0" layoutY="85.0" mnemonicParsing="false" onAction="#btnOk" text="확인" />
+      <Button layoutX="115.0" layoutY="85.0" mnemonicParsing="false" onAction="#btnCancel" text="취소" />
+      <Button layoutX="196.0" layoutY="85.0" mnemonicParsing="false" onAction="#btnMembership" text="회원가입" />
+   </children>
+</AnchorPane>
