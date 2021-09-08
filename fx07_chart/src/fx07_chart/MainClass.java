@@ -1,6 +1,4 @@
-package fx06_DB;
-
-import java.io.IOException;
+package fx07_chart;
 
 
 import javafx.application.Application;
@@ -9,10 +7,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class ex01 extends Application{
+public class MainClass extends Application {
 
 	@Override
-	public void start(Stage primaryStage) throws IOException{
+	public void start(Stage primaryStage) throws Exception {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("eventTest.fxml"));
 		Parent root = loader.load();
 		Scene scene = new Scene(root);
@@ -24,6 +22,7 @@ public class ex01 extends Application{
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
+
 	public static void main(String[] args) {
 		launch(args);
 	}
