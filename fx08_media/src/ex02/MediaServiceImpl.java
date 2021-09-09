@@ -71,6 +71,11 @@ public class MediaServiceImpl implements MediaService{
 					double progress = 
 							mp.getCurrentTime().toSeconds()/mp.getTotalDuration().toSeconds();
 					progressBar.setProgress(progress);
+					progressIndicator.setProgress(progress);
+					labelTime.setText(
+							(int)mp.getCurrentTime().toSeconds() +"/"+
+							(int)mp.getTotalDuration().toSeconds()
+							);
 				});
 			}
 		});
