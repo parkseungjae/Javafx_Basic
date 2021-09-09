@@ -65,9 +65,19 @@ public class MediaServiceImpl implements MediaService{
 				btnPlay.setDisable(false);
 				btnPause.setDisable(true);
 				btnStop.setDisable(true);
+				
+				mp.currentTimeProperty().addListener((a,b,c)->{
+					// 흐르는 시간/ 최종 시간
+					double progress = 
+							mp.getCurrentTime().toSeconds()/mp.getTotalDuration().toSeconds();
+					progressBar.setProgress(progress);
+				});
 			}
 		});
 		mp.setOnPlaying(()->{
+			
+			sliderVolume.setValue(50.0);
+			
 			btnPlay.setDisable(true);
 			btnPause.setDisable(false);
 			btnStop.setDisable(false);
@@ -94,6 +104,7 @@ public class MediaServiceImpl implements MediaService{
 
 	@Override
 	public void volumeControl() {
-
+		mp.setVolume(sliderVolume.getValue() / 100.0);
+		
 	}
 }
