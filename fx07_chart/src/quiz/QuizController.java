@@ -9,6 +9,7 @@ import common.ExitImpl;
 import count.Count;
 import count.CountImpl;
 import database.DBClass;
+import database.answerDTO;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 
@@ -19,6 +20,7 @@ public class QuizController implements Initializable{
 	ChartViewClass cvc;
 	Count cnt;
 	DBClass db;
+	answerDTO dto;
 	public void setRoot(Parent root) {
 		this.root = root;
 	}
@@ -32,12 +34,16 @@ public class QuizController implements Initializable{
 	}
 	
 	public void submitBtn() {
-		System.out.println("확인");
+	//	System.out.println("확인");
 		cnt.setRoot(root);
-		cnt.getColumn();
+		/*dto.setTrip(cnt.getColumnTrip());
+		dto.setAge(cnt.getColumnAge());
+		dto.setGender(cnt.getColumnGender());
+		*/
+		db.insert(dto);
 	}
 	public void cancelBtn() {
-		System.out.println("취소");
+	//	System.out.println("취소");
 		ex.setRoot(root);
 		ex.exitProc();
 	}

@@ -4,5 +4,7 @@ import javafx.scene.Parent;
 
 public interface Count {
 	public void setRoot(Parent root);
-	public void getColumn();
+	public String getColumnTrip();
+	public String getColumnAge();
+	public String getColumnGender();
 }

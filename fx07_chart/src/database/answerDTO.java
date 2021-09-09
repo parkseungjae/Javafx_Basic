@@ -4,7 +4,7 @@ public class answerDTO {
 	private String trip;
 	private String age;
 	private String gender;
-	private int answerCode;
+	//private int answerCode;
 	public String getTrip() {
 		return trip;
 	}
@@ -23,11 +23,13 @@ public class answerDTO {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
+	/*
 	public int getAnswerCode() {
 		return answerCode;
 	}
 	public void setAnswerCode(int answerCode) {
 		this.answerCode = answerCode;
 	}
+	*/
 	
 }
