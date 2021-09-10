@@ -11,7 +11,6 @@ INDEX VERSION 1.131+C:\park's java\javafx-workspace\.metadata\.plugins\org.eclip
 2760187564.index
 3241590670.index
 1885644194.index
-3443430821.index
 3087287361.index
 2944172318.index
 4104570565.index
